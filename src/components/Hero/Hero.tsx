@@ -1,17 +1,20 @@
-import { BrowserRouter } from "react-router-dom"
-import { Container } from "./styles"
-import ScrollAnimation from "react-animate-on-scroll"
-import Illustration from "../../assets/illustration.svg"
-import { NavHashLink } from "react-router-hash-link"
-import linkedin from '../../assets/linkedin.svg'
-import emailIcon from '../../assets/email-mail-svgrepo-com.svg'
-import Hello from '../../assets/Hello.gif'
+import { Container } from "./styles";
+import ScrollAnimation from "react-animate-on-scroll";
+import Illustration from "../../assets/illustration.svg";
+import { NavHashLink } from "react-router-hash-link";
+import linkedin from "../../assets/linkedin.svg";
+import github from "../../assets/github.svg";
+import emailIcon from "../../assets/email-mail-svgrepo-com.svg";
+import Hello from "../../assets/Hello.gif";
+
 export function Hero() {
   return (
     <Container id="home">
       <div className="hero-text">
         <ScrollAnimation animateIn="fadeInUp">
-          <p>Hello <img src={Hello} alt="Hello" width="20px" />, I'm</p>
+          <p>
+            Hello <img src={Hello} alt="Hello" width="20px" />, I'm
+          </p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.2 * 1000}>
           <h1>Thomas Mertens</h1>
@@ -20,12 +23,13 @@ export function Hero() {
           <h3>Full Stack Developer</h3>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}>
-          <p className="small-resume">Graduaat Programmeren</p>
+          <p className="small-resume">Graduate Programming</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.8 * 1000}>
-          <BrowserRouter>
-            <NavHashLink smooth to="#contact" className="button">Contact</NavHashLink>
-          </BrowserRouter>
+          {/* Use NavHashLink directly */}
+          <NavHashLink smooth to="#contact" className="button">
+            Contact
+          </NavHashLink>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={1 * 1000}>
           <div className="social-media">
@@ -36,21 +40,20 @@ export function Hero() {
             >
               <img src={linkedin} alt="Linkedin" />
             </a>
-            <a
-              href="https://github.com/CodeVinayak/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={emailIcon} alt="GitHub" color="white" />
+            <a href="https://github.com/lace-be" target="_blank" rel="noreferrer">
+              <img src={github} alt="Github" />
             </a>
-            </div>
+            <a href="mailto:thomasmertens50@gmail.com">
+              <img src={emailIcon} alt="GitHub" />
+            </a>
+          </div>
         </ScrollAnimation>
       </div>
       <div className="hero-image">
         <ScrollAnimation animateIn="fadeInRight" delay={1 * 1000}>
-          <img src={Illustration} alt="Ilustração" />
+          <img src={Illustration} alt="Illustration" />
         </ScrollAnimation>
       </div>
     </Container>
-  )
+  );
 }

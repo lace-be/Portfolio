@@ -1,23 +1,20 @@
 import { Container } from "./styles";
-import emailIcon from "../../assets/email-icon.svg";
-import phoneIcon from "../../assets/phone-icon.svg"
-import { Form } from "../Form/Form";
+import emailIcon from '../../assets/email-mail-svgrepo-com.svg'
 
-
-export function Contact(){
-
-  return(
+export function Contact() {
+  return (
     <Container id="contact">
       <header>
         <h2>Contact</h2>
       </header>
       <div className="contacts">
-        <div>
-        <a href="mailto:thomasmertens50@gmail.com"><img src={emailIcon} alt="Email" /></a> 
-          <a href="mailto:thomasmertens50@gmail.com">thomasmertens50@gmail.com</a>
-        </div>  
+        <div className="contact-card">
+          <a href="mailto:thomasmertens50@gmail.com">
+            <img src={emailIcon} alt="email" />
+            <p>thomasmertens50@gmail.com</p>
+          </a>
+        </div>
       </div>
-      <Form></Form>
     </Container>
-  )
+  );
 }

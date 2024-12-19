@@ -1,20 +1,32 @@
-import Particles from "react-tsparticles"
+import Particles from "react-tsparticles";
+import { Routes, Route } from "react-router-dom";
 import { Container } from "./styles";
 import { Hero } from "../Hero/Hero";
 import { About } from "../About/About";
 import { Contact } from "../Contact/Contact";
 import { Project } from "../Project/Project";
+
 import wordpress from "../../assets/wordpress.svg";
-import shopify from "../../assets/shopify.svg";
 import htmlIcon from "../../assets/html-icon.svg";
 import cssIcon from "../../assets/css-icon.svg";
-import sassIcon from "../../assets/sass-icon.svg";
 import jsIcon from "../../assets/js-icon.svg";
 import nodeIcon from "../../assets/node-icon.svg";
 import reactIcon from "../../assets/react-icon.svg";
 import typescriptIcon from "../../assets/typescript-icon.svg";
 import vueIcon from "../../assets/vue-icon.svg";
 import boostrapIcon from "../../assets/bootstrap-icon.svg";
+import mysqlIcon from "../../assets/mysql-icon.svg";
+
+import csharpIcon from "../../assets/c--4.svg";
+import laravelIcon from "../../assets/laravel-2.svg";
+import tailwindIcon from "../../assets/tailwind-css-2.svg";
+import angularIcon from "../../assets/angular-icon-1.svg";
+import dockerIcon from "../../assets/docker-4.svg";
+
+import GymApplication from "../Project/Projects/GymApp";
+import VetApplication from "../Project/Projects/VetApp";
+import SchoolApplication from "../Project/Projects/SchoolApp";
+import MasterInteriorApplication from "../Project/Projects/MasterInteriorApp";
 
 export function Main() {
   return (
@@ -30,10 +42,6 @@ export function Main() {
           "fpsLimit": 60,
           "interactivity": {
             "events": {
-              "onClick": {
-                "enable": true,
-                "mode": "push"
-              },
               "onDiv": {
                 "elementId": "repulse-div",
                 "enable": false,
@@ -164,11 +172,6 @@ export function Main() {
                   "height": 20
                 },
                 {
-                  "src": shopify,
-                  "width": 20,
-                  "height": 20
-                },
-                {
                   "src": htmlIcon,
                   "width": 20,
                   "height": 20
@@ -178,11 +181,11 @@ export function Main() {
                   "width": 20,
                   "height": 20
                 },
-                // {
-                //   "src": mysqlIcon,
-                //   "width": 20,
-                //   "height": 20
-                // },
+                {
+                   "src": mysqlIcon,
+                   "width": 20,
+                   "height": 20
+                },
                 {
                   "src": nodeIcon,
                   "width": 20,
@@ -194,26 +197,40 @@ export function Main() {
                   "height": 20
                 },
                 {
-                  "src": sassIcon,
-                  "width": 20,
-                  "height": 20
-                },
-                {
                   "src": typescriptIcon,
                   "width": 20,
                   "height": 20
                 },
-                // {
-                //   "src": vscodeIcon,
-                //   "width": 20,
-                //   "height": 20
-                // },
                 {
                   "src": vueIcon,
                   "width": 20,
                   "height": 20
                 },
-
+                {
+                  "src": csharpIcon,
+                  "width": 20,
+                  "height": 20
+                },
+                {
+                  "src": laravelIcon,
+                  "width": 20,
+                  "height": 20
+                },
+                {
+                  "src": tailwindIcon,
+                  "width": 20,
+                  "height": 20
+                },
+                {
+                  "src": angularIcon,
+                  "width": 20,
+                  "height": 20
+                },
+                {
+                  "src": dockerIcon,
+                  "width": 20,
+                  "height": 20
+                },
               ],
               "polygon": {
                 "sides": 5
@@ -255,10 +272,13 @@ export function Main() {
           }
         }}
       />
-      <Hero></Hero>
-      <About></About>
-      <Project></Project>
-      <Contact></Contact>
+      <Routes>
+        <Route path="/" element={<><Hero /><About /><Project /><Contact /></>} />
+        <Route path="/gym-application" element={<GymApplication />} />
+        <Route path="/projects/vet-application" element={<VetApplication />} />
+        <Route path="/projects/school-application" element={<SchoolApplication />} />
+        <Route path="/master-interior-application" element={<MasterInteriorApplication />} />
+      </Routes>
     </Container>
   );
 }

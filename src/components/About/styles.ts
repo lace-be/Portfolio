@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  margin-top: 12rem;
+  margin-top: 16rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
@@ -13,33 +13,26 @@ export const Container = styled.section`
   }
 
   .about-right {
-    text-align: center;
-
-    img {
-      margin-top: 2rem;
-      width: 75%;
-      filter: grayscale(0);
-      transition: filter 0.5s;
-
-      &:hover {
-        filter: grayscale(0);
-      }
-    }
-
     .work-experience {
-      margin-top: 2rem;
+      margin-top: 7rem;
 
       h3 {
-        color: var(--green);
+        color: var(--white);
+        text-align: left;
+        margin-left: 1rem;
       }
 
       h4 {
         margin-top: 1.6rem;
+        text-align: left;
+        margin-left: 1rem; 
       }
 
       p {
         font-size: 1.6rem;
         line-height: 1.5;
+        text-align: left;
+        margin-left: 1rem; 
       }
     }
   }
@@ -49,18 +42,26 @@ export const Container = styled.section`
     margin-bottom: 2rem;
     font-size: 3rem;
     margin-top: 0rem;
-    color: var(--green);
+    color: var(--white);
   }
 
   h3 {
-    margin-top: 2rem;
-    color: var(--green);
+    color: var(--white);
+    text-align: left;
+    margin-left: 1rem;
+  }
+
+  h4 {
+    margin-top: 1.6rem;
+    text-align: left;
+    margin-left: 1rem; 
   }
 
   p {
-    font-size: 1.8rem;
-    letter-spacing: 0.1rem;
-    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: left;
+    margin-left: 1rem; 
   }
 
   .hard-skills {
