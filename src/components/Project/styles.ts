@@ -2,40 +2,38 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   margin-top: 15rem;
-  
-.details-button {
-  bottom: 15px;
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #23ce6b; /* Button color */
-  color: #fff; /* Text color */
-  font-weight: bold;
-  border-radius: 5px;
-  text-align: center;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
-  text-decoration: none;
-  margin-top: 15px;
-}
 
-.details-button:hover {
-  background-color: #1a9f50; /* Darker shade for hover effect */
-}
+  .details-button {
+    bottom: 15px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #23ce6b; /* Button color */
+    color: #fff; /* Text color */
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+    margin-top: 15px;
+  }
 
-.details-button:focus {
-  outline: none; /* Remove the focus outline */
-}
+  .details-button:hover {
+    background-color: #1a9f50; /* Darker shade for hover effect */
+  }
 
-.details-button:active {
-  background-color: #1a9f50; /* Change the background on click */
-}
+  .details-button:focus {
+    outline: none; /* Remove the focus outline */
+  }
 
+  .details-button:active {
+    background-color: #1a9f50; /* Change the background on click */
+  }
 
-  h2 {
+  .titlehead {
     text-align: center;
     font-size: 4rem;
     margin-bottom: 3rem;
-    color: var(--white); /* Assuming you have a color variable for green */
   }
 
   .projects {
@@ -55,7 +53,7 @@ export const Container = styled.section`
       display: flex;
       flex-direction: column;
       height: 100%;
-      color: #FFFF;
+      color: #ffff;
       position: relative; /* Enable absolute positioning for children */
 
       &:hover {
@@ -77,11 +75,11 @@ export const Container = styled.section`
         }
 
         a > img {
-          width: 5.0rem;
+          width: 5rem;
         }
       }
-      
-      h3 {
+
+      h2 {
         margin-bottom: 2rem;
         color: var(--white); /* Added green color to match your design */
       }
@@ -91,7 +89,7 @@ export const Container = styled.section`
         margin-bottom: 2rem;
         color: #fff; /* Ensure the text color is white for contrast */
         a {
-          color: #FFFF;
+          color: #ffff;
           border-bottom: 1px solid var(--white);
           transition: color 0.25s;
           &:hover {
@@ -111,8 +109,8 @@ export const Container = styled.section`
         }
 
         img {
-          width: 3rem; /* Smaller logo size */
-          height: 3rem;
+          width: 8rem; /* Smaller logo size */
+          height: 8rem;
           position: absolute;
           bottom: 1rem;
           right: 1rem;

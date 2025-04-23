@@ -16,7 +16,7 @@ export function Header() {
 
   return (
     <Container className="header-fixed">
-      <HashLink smooth to="#home" className="logo" style={{ paddingRight: '15px' }}>
+      <HashLink smooth to="/#home" className="logo" style={{ paddingRight: '15px' }}>
         <span>{"<Thomas "}</span>
         <span>{" Mertens/>"}</span>
       </HashLink>
@@ -29,23 +29,23 @@ export function Header() {
       />
       <label htmlFor="switch"></label>
       <nav className={isActive ? 'active' : ''}>
-        <NavHashLink smooth to="#home" onClick={closeMenu}>
+        <NavHashLink smooth to="/#home" onClick={closeMenu}>
           Home
         </NavHashLink>
-        <NavHashLink smooth to="#about" onClick={closeMenu}>
+        <NavHashLink smooth to="/#cv" onClick={closeMenu}>
           CV
         </NavHashLink>
-        <NavHashLink smooth to="#project" onClick={closeMenu}>
+        <NavHashLink smooth to="/#project" onClick={closeMenu}>
           Projects
         </NavHashLink>
-        <NavHashLink className="button" smooth to="#contact" onClick={closeMenu}>
+        <NavHashLink className="button" smooth to="/#contact" onClick={closeMenu}>
           Contact
         </NavHashLink>
       </nav>
       <div
         aria-expanded={isActive ? 'true' : 'false'}
         aria-haspopup="true"
-        aria-label={isActive ? 'Fechar menu' : 'Abrir menu'}
+        aria-label={isActive ? 'Open menu' : 'Close menu'}
         className={isActive ? 'menu active' : 'menu'}
         onClick={() => {
           setActive(!isActive);

@@ -1,6 +1,5 @@
 import { Container } from "./styles";
 import ScrollAnimation from "react-animate-on-scroll";
-import Illustration from "../../assets/illustration.svg";
 import { NavHashLink } from "react-router-hash-link";
 import linkedin from "../../assets/linkedin.svg";
 import github from "../../assets/github.svg";
@@ -40,7 +39,11 @@ export function Hero() {
             >
               <img src={linkedin} alt="Linkedin" />
             </a>
-            <a href="https://github.com/lace-be" target="_blank" rel="noreferrer">
+            <a
+              href="https://github.com/lace-be"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={github} alt="Github" />
             </a>
             <a href="mailto:thomasmertens50@gmail.com">
@@ -51,7 +54,11 @@ export function Hero() {
       </div>
       <div className="hero-image">
         <ScrollAnimation animateIn="fadeInRight" delay={1 * 1000}>
-          <img src={Illustration} alt="Illustration" />
+          <img
+            src="Images/fotokaarthemd.png"
+            alt="Login"
+            className="profile-img"
+          />
         </ScrollAnimation>
       </div>
     </Container>

@@ -25,14 +25,14 @@ export const Container = styled.section`
       h4 {
         margin-top: 1.6rem;
         text-align: left;
-        margin-left: 1rem; 
+        margin-left: 1rem;
       }
 
       p {
         font-size: 1.6rem;
         line-height: 1.5;
         text-align: left;
-        margin-left: 1rem; 
+        margin-left: 1rem;
       }
     }
   }
@@ -54,14 +54,14 @@ export const Container = styled.section`
   h4 {
     margin-top: 1.6rem;
     text-align: left;
-    margin-left: 1rem; 
+    margin-left: 1rem;
   }
 
   p {
     font-size: 1.6rem;
     line-height: 1.5;
     text-align: left;
-    margin-left: 1rem; 
+    margin-left: 1rem;
   }
 
   .hard-skills {
@@ -109,6 +109,30 @@ export const Container = styled.section`
     .about-left,
     .about-right {
       margin-bottom: 4rem;
+    }
+  }
+  .download-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.8rem 1.6rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #23ce6b;
+    border: 2px solid #23ce6b;
+    border-radius: 100px;
+    background: transparent;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-left: 1.2rem;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+
+    &:hover {
+      color: white;
     }
   }
 `;

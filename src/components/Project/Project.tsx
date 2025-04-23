@@ -9,7 +9,7 @@ export function Project() {
 
   return (
     <Container id="project">
-      <h2>My Projects</h2>
+      <h1 className="titlehead">My Projects</h1>
       <div className="projects">
         <ScrollAnimation animateIn="flipInX">
           <div className="project">
@@ -38,7 +38,7 @@ export function Project() {
               </div>
             </header>
             <div className="body">
-              <h3>Gym Application</h3>
+              <h2>Gym Application</h2>
               <img
                 src="Images/gymApp.png"
                 alt="Menu"
@@ -50,7 +50,10 @@ export function Project() {
               </p>
             </div>
             <footer>
-              <p className="details-button" onClick={() => navigate("/gym-application")}>
+              <p
+                className="details-button"
+                onClick={() => navigate("/gym-application")}
+              >
                 View Project Details
               </p>
               <ul className="tech-list">
@@ -90,14 +93,17 @@ export function Project() {
               </div>
             </header>
             <div className="body">
-              <h3>Vet Application</h3>
+              <h2>Vet Application</h2>
               <p>
                 In this app you can manage appointments between doctors and
                 clients and their pets
               </p>
             </div>
             <footer>
-              <p className="details-button" onClick={() => navigate("/gym-application")}>
+              <p
+                className="details-button"
+                onClick={() => navigate("/gym-application")}
+              >
                 View Project Details
               </p>
               <ul className="tech-list">
@@ -139,14 +145,17 @@ export function Project() {
               </div>
             </header>
             <div className="body">
-              <h3>School Application</h3>
+              <h2>School Application</h2>
               <p>
                 In this app you can manage classes, students, study subjects,
                 make photo albums etc.
               </p>
             </div>
             <footer>
-              <p className="details-button" onClick={() => navigate("/gym-application")}>
+              <p
+                className="details-button"
+                onClick={() => navigate("/gym-application")}
+              >
                 View Project Details
               </p>
               <ul className="tech-list">
@@ -179,7 +188,7 @@ export function Project() {
               </svg>
             </header>
             <div className="body">
-              <h3>Master Interior Application</h3>
+              <h2>Master Interior Application</h2>
               <img
                 src="Images/MasterInterior/menu.png"
                 alt="Menu"
@@ -190,12 +199,14 @@ export function Project() {
                 can view your orders, offers, invoices and manage your account
                 details. Personel can also manage projects and clients.
               </p>
-              
             </div>
             <footer>
-            <p className="details-button" onClick={() => navigate("/master-interior-application")}>
-                    View Project Details
-                  </p>
+              <p
+                className="details-button"
+                onClick={() => navigate("/master-interior-application")}
+              >
+                View Project Details
+              </p>
               <ul className="tech-list">
                 <li>Php Laravel</li>
                 <li>Vue.js</li>
