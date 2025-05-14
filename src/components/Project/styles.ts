@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const Container = styled.section`
   margin-top: 15rem;
 
+  .body {
+    padding-bottom: 40px;
+  }
   .details-button {
     bottom: 15px;
     display: inline-block;

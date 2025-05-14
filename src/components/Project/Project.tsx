@@ -14,19 +14,6 @@ export function Project() {
         <ScrollAnimation animateIn="flipInX">
           <div className="project">
             <header>
-              <svg
-                width="50"
-                xmlns="http://www.w3.org/2000/svg"
-                role="img"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#23ce6b"
-                strokeWidth="1"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-              </svg>
               <div className="project-links">
                 <a
                   href="https://github.com/lace-be/WorkoutApp"
@@ -39,11 +26,6 @@ export function Project() {
             </header>
             <div className="body">
               <h2>Gym Application</h2>
-              <img
-                src="Images/gymApp.png"
-                alt="Menu"
-                style={{ maxWidth: "50%", height: "auto" }}
-              />
               <p>
                 Developed an app in React Native where you can track your
                 progress, make your own workouts, and look for nearby gyms.
@@ -52,9 +34,12 @@ export function Project() {
             <footer>
               <p
                 className="details-button"
-                onClick={() => navigate("/gym-application")}
+                onClick={() => {
+                  window.scrollTo(0, 0); //scrolls to top
+                  navigate("/gym-application");
+                }}
               >
-                View Project Details
+                View Details
               </p>
               <ul className="tech-list">
                 <li>Angular</li>
@@ -68,20 +53,6 @@ export function Project() {
         <ScrollAnimation animateIn="flipInX">
           <div className="project">
             <header>
-              <svg
-                width="50"
-                xmlns="http://www.w3.org/2000/svg"
-                role="img"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#23ce6b"
-                strokeWidth="1"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <title>Folder</title>
-                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-              </svg>
               <div className="project-links">
                 <a
                   href="https://github.com/lace-be/WPF-Project"
@@ -100,12 +71,12 @@ export function Project() {
               </p>
             </div>
             <footer>
-              <p
+              {/* <p
                 className="details-button"
                 onClick={() => navigate("/gym-application")}
               >
                 View Project Details
-              </p>
+              </p> */}
               <ul className="tech-list">
                 <li>WPF</li>
                 <li>.NET</li>
@@ -120,20 +91,6 @@ export function Project() {
         <ScrollAnimation animateIn="flipInX">
           <div className="project">
             <header>
-              <svg
-                width="50"
-                xmlns="http://www.w3.org/2000/svg"
-                role="img"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#23ce6b"
-                strokeWidth="1"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <title>Folder</title>
-                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-              </svg>
               <div className="project-links">
                 <a
                   href="https://github.com/lace-be/MVC-Project"
@@ -152,12 +109,12 @@ export function Project() {
               </p>
             </div>
             <footer>
-              <p
+              {/* <p
                 className="details-button"
                 onClick={() => navigate("/gym-application")}
               >
                 View Project Details
-              </p>
+              </p> */}
               <ul className="tech-list">
                 <li>MVC</li>
                 <li>.NET</li>
@@ -171,29 +128,8 @@ export function Project() {
 
         <ScrollAnimation animateIn="flipInX">
           <div className="project">
-            <header>
-              <svg
-                width="50"
-                xmlns="http://www.w3.org/2000/svg"
-                role="img"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#23ce6b"
-                strokeWidth="1"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <title>Folder</title>
-                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-              </svg>
-            </header>
             <div className="body">
               <h2>Master Interior Application</h2>
-              <img
-                src="Images/MasterInterior/menu.png"
-                alt="Menu"
-                style={{ maxWidth: "50%", height: "auto" }}
-              />
               <p>
                 In this app is made for customers and personel. As a customer u
                 can view your orders, offers, invoices and manage your account
@@ -203,9 +139,12 @@ export function Project() {
             <footer>
               <p
                 className="details-button"
-                onClick={() => navigate("/master-interior-application")}
+                onClick={() => {
+                  window.scrollTo(0, 0); //scrolls to top
+                  navigate("/master-interior-application");
+                }}
               >
-                View Project Details
+                View Details
               </p>
               <ul className="tech-list">
                 <li>Php Laravel</li>
